@@ -5,7 +5,7 @@ import { Router } from './Router';
 const App = () => {
 
   return (
-    <BrowserRouter>
+    <BrowserRouter  basename="/projeto-modalidade-fatec-campinas/">
     <Router/>
     </BrowserRouter>
   )
