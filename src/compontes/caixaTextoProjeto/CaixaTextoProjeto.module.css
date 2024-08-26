@@ -1,0 +1,29 @@
+.CaixaTextoProjeto {
+    border: 3px solid black;
+    background-color: var(--verdeFatec);
+    width: 50rem;
+    height: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0; /* Remova a margem */
+    color: var(--branco);
+}
+
+.CaixaTextoProjeto:hover {
+    background-color: var(--cinza);
+    color: var(--preto);
+}
+
+.CaixaTextoProjeto p {
+    margin-right: auto;
+    padding: 0 4rem;
+}
+
+.CaixaTextoProjeto img {
+    margin-left: auto;
+    width: 250px;
+    height: 100%; 
+    padding: 0 4rem;
+    background-size: cover;
+}

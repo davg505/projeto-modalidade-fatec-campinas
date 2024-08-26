@@ -1,0 +1,30 @@
+.CaixaTextoFatecCampinas {
+    border: 3px solid black;
+    background-color: var(--verdeFatec);
+    width: 50rem;
+    height: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--branco);
+    margin: 0; /* Remova a margem */
+}
+
+.CaixaTextoFatecCampinas:hover {
+    background-color: var(--cinza);
+    color: var(--preto);
+}
+
+.CaixaTextoFatecCampinas p {
+    margin-right: auto;
+    
+    padding: 0 4rem;
+}
+
+.CaixaTextoFatecCampinas img {
+    margin-left: auto;
+    width: 250px;
+    height: 100%; 
+    padding: 0 4rem;
+    background-size: cover;
+}

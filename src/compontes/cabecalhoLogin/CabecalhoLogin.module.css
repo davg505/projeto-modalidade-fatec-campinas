@@ -1,0 +1,9 @@
+.CabecalhoLogin {
+    border: 2px solid black;
+    background-color: var(--vermelho);
+    width: 50rem;
+    height: 4.5rem;
+    justify-content: center;
+    align-items: center;
+    margin: 50; /* Remova a margem */
+}

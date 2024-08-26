@@ -1,0 +1,29 @@
+.BotaoExpansivo {
+    border: 3px solid black;
+    background-color: var(--cinza);
+    width: 50.35rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0; /* Remover margem para colar a caixa ao botão */
+    padding: 1rem 0.5rem;
+    margin-top: 2.5rem;
+    color: var(--branco);
+}
+
+.BotaoExpansivo:hover {
+    background-color: var(--verdeFatec);
+    color: var(--preto);
+}
+
+.BotaoExpansivo h1 {
+    margin-right: auto;
+}
+
+.BotaoExpansivo h2 {
+
+    margin-left: auto;
+    font-size: 2.5rem;
+}
+

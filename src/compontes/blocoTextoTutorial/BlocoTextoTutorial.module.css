@@ -1,0 +1,38 @@
+.BlocoTextoTutorial{
+    border: 3px solid black;
+    background-color: var(--verdeFatec);
+    width: 20rem;
+    height: 15rem;
+    justify-content: center;
+    align-items: center;
+    margin: 0; /* Remova a margem */
+}
+
+.BlocoTextoTutorial:hover {
+    background-color: var(--cinza);
+    color: var(--preto);
+}
+
+.BlocoTextoTutorial p {
+    margin-right: auto;
+    color: var(--branco);
+    padding: 0 4rem;
+}
+
+.BlocoTextoTutorial button {
+    display: inline-block;
+    text-align: center;
+    background-color: var(--cinza);
+    color: var(--branco);
+    padding: 10px 20px;
+    margin: 10px 6px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.BlocoTextoTutorial button:hover {
+    background-color: var(--branco);
+    color: var(--preto);
+}

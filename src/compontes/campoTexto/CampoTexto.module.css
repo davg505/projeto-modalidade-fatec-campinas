@@ -1,0 +1,6 @@
+.CampoText{
+    border: 1px solid var(--preto);
+    width: 20rem;
+    padding: 0.25rem 0.75rem;
+
+}

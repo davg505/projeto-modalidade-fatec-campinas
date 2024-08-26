@@ -1,0 +1,17 @@
+.ListaAcesso {
+    display: inline-block;
+    text-align: center;
+    background-color: var(--vermelho);
+    color: var(--branco);
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.ListaAcesso:hover {
+    background-color: var(--branco);
+    color: var(--preto);
+}
