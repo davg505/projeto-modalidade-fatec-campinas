@@ -1,13 +1,14 @@
 .CaixaTextoFatecCampinas {
     border: 3px solid black;
     background-color: var(--verdeFatec);
-    width: 50rem;
-    height: 12rem;
+    width: 45rem;
+    height: 15rem;
     display: flex;
     justify-content: center;
     align-items: center;
     color: var(--branco);
-    margin: 0; /* Remova a margem */
+    margin-left: 2.5rem;
+    border-radius: 2rem;
 }
 
 .CaixaTextoFatecCampinas:hover {
@@ -17,7 +18,6 @@
 
 .CaixaTextoFatecCampinas p {
     margin-right: auto;
-    
     padding: 0 4rem;
 }
 

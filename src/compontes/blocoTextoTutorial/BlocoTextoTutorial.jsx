@@ -19,7 +19,7 @@ export const BlocoTextoTutorial = () => {
         <div>
         <BotaoExpansivoMenor text="Tutorial" text1="+" onClick={toggleExpand} />
         {isExpanded && (
-            <div className={style.BlocoTextoTutorial} style={{ marginTop: '-0.25rem' }}>
+            <div className={style.BlocoTextoTutorial} style={{ marginTop: '0.80rem' }}>
             <button  onClick={handleLegislationClick}>Tutorial inicial aplicação</button>
             <button  onClick={ handleGuiaDoEstagíarioClick}>Tutorial Aluno</button>
             <button  onClick={ handleGuiaDoEstagíarioClick}>Tutorial Professor</button>

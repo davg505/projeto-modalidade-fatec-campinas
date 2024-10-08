@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import { CabecalhoLogin } from "../cabecalhoLogin/cabecalhoLogin";
 import style from './CaixaLogin.module.css';
-import imagemBaixa from './image/fateccampinas.png';
 import imagemAlta from './image/imagemicep.jpg';
 
 export const CaixaLogin = (props) => {
@@ -20,9 +19,6 @@ export const CaixaLogin = (props) => {
             <Link>Esqueci a senha</Link>
             </div>
             <div className={style.imagem}>
-                <div>
-                <img className={style.imagemBaixa} src={imagemBaixa} alt="Imagem baixa" />  
-                </div>
                 <div>
                 <img className={style.imagemAlta} src={imagemAlta} alt="Imagem alta" />
                 </div>

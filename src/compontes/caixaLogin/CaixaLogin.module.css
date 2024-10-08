@@ -4,6 +4,7 @@
     width: 50rem;
     height: 33.55rem;
     position: relative; /* Adiciona contexto de posicionamento */
+    border-radius: 3rem;
 }
 
 .login {
@@ -51,11 +52,11 @@
 }
 
 .login a:hover {
-    color: var(--vermelho); /* Cor do texto */
+    color: var(--azul); /* Cor do texto */
 }
 
 .login button{
-    background: var(--vermelho);
+    background: var(--azul);
     border: 2px solid var(--preto);
     padding: 0.25rem 0.75rem;
     color: var(--preto);
@@ -72,14 +73,15 @@
 }
 
 .imagem {
-    margin-top: -23.85rem;
+    margin-top: -19.85rem;
     position: relative;
     z-index: 1; /* Mantém as imagens abaixo do login */
+    
 }
 
 
 .imagemAlta, .imagemBaixa {
     width: 300px;
-    margin-left: 31.30rem;
-    margin-top: 0rem;
+    margin-left: 29.30rem;
+    border-radius: 10rem;
 }

@@ -1,7 +1,7 @@
 .ListaAcesso {
     display: inline-block;
     text-align: center;
-    background-color: var(--vermelho);
+    background-color: var(--azul);
     color: var(--branco);
     padding: 10px 20px;
     margin: 0 5px;

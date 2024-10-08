@@ -1,4 +1,5 @@
 .Inicial {
+
     display: flex;
     flex-direction: column; /* Empilha os elementos verticalmente */
     justify-content: center; /* Centraliza verticalmente */

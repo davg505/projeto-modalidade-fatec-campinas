@@ -12,7 +12,7 @@ export const CaixaTextoFatecCampinas= () => {
         <div>
         <BotaoExpansivo text="Fatec Campinas" text1="+" onClick={toggleExpand} />
         {isExpanded && (
-            <div className={style.CaixaTextoFatecCampinas} style={{ marginTop: '-0.25rem' }}>
+            <div className={style.CaixaTextoFatecCampinas} style={{ marginTop: '0.80rem' }}>
             <p>O projeto visa aprimorar e centralizar o controle
             e agestão das informações de estágio
             realizadas pelos alunos, migrando os dados da

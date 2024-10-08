@@ -1,13 +1,14 @@
 .CaixaTextoProjeto {
     border: 3px solid black;
     background-color: var(--verdeFatec);
-    width: 50rem;
-    height: 12rem;
+    width: 45rem;
+    height: 15rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0; /* Remova a margem */
     color: var(--branco);
+    margin-left: 2.5rem;
+    border-radius: 2rem;
 }
 
 .CaixaTextoProjeto:hover {

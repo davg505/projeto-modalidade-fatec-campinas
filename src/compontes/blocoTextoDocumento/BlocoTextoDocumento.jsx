@@ -18,7 +18,7 @@ export const BlocoTextoDocumento = () => {
         <div>
         <BotaoExpansivoMenor text="Documentos" text1="+" onClick={toggleExpand} />
         {isExpanded && (
-            <div className={style.BlocoTextoDocumento} style={{ marginTop: '-0.25rem' }}>
+            <div className={style.BlocoTextoDocumento} style={{ marginTop: '0.80rem' }}>
             <button  onClick={handleLegislationClick}>Legislação para Estágio</button>
             <button  onClick={ handleGuiaDoEstagíarioClick}>Guia do Estagíario</button>
             </div>

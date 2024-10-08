@@ -6,6 +6,7 @@
     justify-content: center;
     align-items: center;
     margin: 0; /* Remova a margem */
+    border-radius: 1rem;
 }
 
 .BlocoTextoTutorial:hover {

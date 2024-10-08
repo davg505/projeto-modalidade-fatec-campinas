@@ -12,7 +12,7 @@ export const BlocoTextoGtech = () =>{
         <div>
         <BotaoExpansivo text="G tech" text1="+" onClick={toggleExpand} />
         {isExpanded && (
-            <div className={style.BlocoTextoGtech} style={{ marginTop: '-0.25rem' }}>
+            <div className={style.BlocoTextoGtech} style={{ marginTop: '0.80rem' }}>
             <p> A GTech é uma empresa especializada em consultoria
         para melhoria contínua de processos por meio da
         tecnologia. Desenvolvemos ferramentas que

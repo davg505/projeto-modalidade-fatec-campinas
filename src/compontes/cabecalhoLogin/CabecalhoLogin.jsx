@@ -5,10 +5,10 @@ export const CabecalhoLogin = (props) => {
     const {text} = props;
     return(
         <div className={style.CabecalhoLogin}>
-        <div>
-        <h1><span>Modalidades</span></h1>
-        <h5><span>`
-            {text}
+        <div >
+        <h1 className={style.cabecalhotexto}><span> {text} </span></h1>
+        <h5 className={style.cabecalhotexto}><span>
+        Modalidades
             </span></h5>
         </div>
         </div>

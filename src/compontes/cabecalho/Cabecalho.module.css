@@ -1,5 +1,5 @@
 .Cabecalho {
-    background: var(--preto);
+    background: var(--cinza);
     color: var(--cinza);
     padding: 1rem 0.5rem;
     display: flex;
