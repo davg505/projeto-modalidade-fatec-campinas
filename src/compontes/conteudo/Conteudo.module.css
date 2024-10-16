@@ -3,6 +3,6 @@
     background-size: cover; /* Ajusta a imagem para cobrir o fundo */
     background-position: center; /* Centraliza a imagem */
     background-repeat: no-repeat; /* Impede que a imagem se repita */
-    padding: 0.5rem 1rem 2.5rem;
-
+    min-height: calc(100vh - 200rem); /* Ajuste para que o conteúdo preencha a altura da tela */
 }
+

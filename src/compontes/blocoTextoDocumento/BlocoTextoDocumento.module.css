@@ -1,13 +1,14 @@
-.BlocoTextoDocumento{
+.BlocoTextoDocumento {
     border: 3px solid black;
     background-color: var(--verdeFatec);
-    width: 20.00rem;
+    width: 20rem;
     height: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 1rem;
-    margin: 0; /* Remova a margem */
+    margin: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .BlocoTextoDocumento:hover {
@@ -18,7 +19,6 @@
 .BlocoTextoDocumento p {
     margin-right: auto;
     color: var(--branco);
-    padding: 0 4rem;
 }
 
 .BlocoTextoDocumento button {
@@ -26,7 +26,6 @@
     text-align: center;
     background-color: var(--cinza);
     color: var(--branco);
-    padding: 10px 20px;
     margin: 0 5px;
     border: none;
     border-radius: 5px;
@@ -37,4 +36,49 @@
 .BlocoTextoDocumento button:hover {
     background-color: var(--branco);
     color: var(--preto);
+}
+
+/* Estilos responsivos para telas menores */
+@media (max-width: 1024px) {
+    .BlocoTextoDocumento {
+        width: 18rem;
+        height: 4.5rem;
+    }
+
+    .BlocoTextoDocumento p {
+        font-size: 1rem;
+    }
+
+    .BlocoTextoDocumento button {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .BlocoTextoDocumento {
+        width: 16rem;
+        height: 4rem;
+    }
+
+    .BlocoTextoDocumento p, .BlocoTextoDocumento button {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .BlocoTextoDocumento {
+        width: 100%;
+        height: 3.5rem;
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .BlocoTextoDocumento p, .BlocoTextoDocumento button {
+        font-size: 0.75rem;
+    }
+
+    .BlocoTextoDocumento button {
+        margin-top: 0.5rem;
+        width: 100%;
+    }
 }

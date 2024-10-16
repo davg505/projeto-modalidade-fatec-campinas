@@ -1,14 +1,16 @@
-.BlocoTextoGtech{
+.BlocoTextoGtech {
     border: 3px solid black;
     background-color: var(--verdeFatec);
     width: 45rem;
-    height: 30rem;
+    height: 25rem;
     display: flex;
     justify-content: center;
     align-items: center;
     color: var(--branco);
     margin-left: 2.5rem;
     border-radius: 2rem;
+    position: relative;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .BlocoTextoGtech:hover {
@@ -17,14 +19,73 @@
 }
 
 .BlocoTextoGtech p {
-    margin-right: auto;
+    margin-right: auto; /* Alinha o parágrafo à esquerda */
+    font-size: 1rem;
     padding: 0 4rem;
 }
 
 .BlocoTextoGtech img {
-    margin-left: auto;
-    width: 260px;
-    height: 100%; 
-    padding: 0 3rem;
-    background-size: cover;
+    margin-right: 6rem; /* Alinha a imagem à direita */
+    width: 20rem; /* Largura padrão da imagem */
+    height: 55%; /* Altura da imagem */
+    background-size: cover; /* Tamanho da imagem */
+    border-radius: 2rem;
+}
+
+/* Estilos responsivos para telas médias */
+@media (max-width: 1024px) {
+    .BlocoTextoGtech {
+        width: 35rem;
+        height: 20rem;
+        margin-left: 1.5rem;
+    }
+
+    .BlocoTextoGtech p {
+        font-size: 1rem;
+    }
+
+    .BlocoTextoGtech img {
+        width: 200px;
+        height: 50%;
+    }
+}
+
+/* Estilos responsivos para tablets e telas pequenas */
+@media (max-width: 768px) {
+    .BlocoTextoGtech {
+        width: 30rem;
+        height: 18rem;
+        margin-left: 1rem;
+    }
+
+    .BlocoTextoGtech p {
+        font-size: 0.9rem;
+    }
+
+    .BlocoTextoGtech img {
+        width: 180px;
+        height: 45%;
+    }
+}
+
+/* Estilos responsivos para smartphones */
+@media (max-width: 480px) {
+    .BlocoTextoGtech {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        padding: 1rem;
+        margin-left: 0;
+    }
+
+    .BlocoTextoGtech p {
+        font-size: 0.85rem;
+        text-align: center;
+    }
+
+    .BlocoTextoGtech img {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+    }
 }

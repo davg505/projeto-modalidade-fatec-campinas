@@ -1,50 +1,48 @@
 .CaixaLogin {
     border: 2px solid #000000;
     background-color: var(--verdeFatec);
-    width: 50rem;
-    height: 33.55rem;
-    position: relative; /* Adiciona contexto de posicionamento */
-    border-radius: 3rem;
+    width: 50rem; /* Largura padrão */
+    height: 33.55rem; /* Altura padrão */
+    position: relative; /* Contexto de posicionamento */
+    border-radius: 2rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 }
 
 .login {
-    margin-left: 0;
+    margin-left: 3rem;
     margin-right: auto;
-    padding: 0 3rem;
-    margin-top: 3rem;
-    width: 50%;
+    margin-top: 1rem;
+    width: 50%; /* Largura padrão do login */
     position: relative; /* Garante que o login esteja no topo */
     z-index: 2; /* Garante que o login fique acima das imagens */
-    gap: 5rem;
+    gap: 4rem;
 }
 
-.CaixaLogin:hover{
+.CaixaLogin:hover {
     background: var(--cinza);
 }
+
 .login h1 {
-    margin-top: 4rem; 
-    padding: 0 9rem;
+    margin-top: 2rem;
 }
 
-.login h4{
-    margin-top: 1rem; 
+.login h4 {
+    margin-top: 1rem;
 }
 
 .login h3 {
     margin-top: 1rem;
-    padding: 0 10rem;
 }
 
-.login input{
+.login input {
     margin-top: 1rem;
-    width: 100%; /* Aumenta a largura do input para ocupar todo o espaço disponível */
-    height: 2rem; /* Define uma altura maior para o input */
-    padding: 0.25rem 0,25rem; /* Aumenta o padding para adicionar espaçamento interno */
-    font-size: 1.0rem; /* Aumenta o tamanho da fonte para tornar o texto mais legível */
-    border: 2px solid var(--preto); /* Ajusta a borda para manter um visual consistente */
-    border-radius: 0.75rem; /* Adiciona bordas arredondadas, se necessário */
+    width: 100%; /* Ocupa todo o espaço disponível */
+    height: 2rem; /* Altura do input */
+    font-size: 1.0rem; /* Tamanho da fonte */
+    border: 2px solid var(--preto); /* Borda do input */
+    border-radius: 0.75rem; /* Bordas arredondadas */
 }
-
 
 .login a {
     text-decoration: none; /* Remove o sublinhado */
@@ -52,23 +50,22 @@
 }
 
 .login a:hover {
-    color: var(--azul); /* Cor do texto */
+    color: var(--azul); /* Cor ao passar o mouse */
 }
 
-.login button{
+.login button {
     background: var(--azul);
     border: 2px solid var(--preto);
-    padding: 0.25rem 0.75rem;
     color: var(--preto);
     margin-top: 1rem;
-    width: 100%; /* Aumenta a largura do input para ocupar todo o espaço disponível */
-    height: 2rem; /* Define uma altura maior para o input */
-    font-size: 1.0rem; /* Aumenta o tamanho da fonte para tornar o texto mais legível */
-    border-radius: 0.5rem; /* Adiciona bordas arredondadas, se necessário */
-    box-sizing: border-box; /* Garante que o padding seja incluído na largura e altura total */
+    width: 100%; /* Ocupa todo o espaço disponível */
+    height: 2rem; /* Altura do botão */
+    font-size: 1.0rem; /* Tamanho da fonte */
+    border-radius: 0.5rem; /* Bordas arredondadas */
+    box-sizing: border-box; /* Inclui borda na largura/altura total */
 }
 
-.login button:hover{
+.login button:hover {
     background: var(--branco);
 }
 
@@ -76,12 +73,100 @@
     margin-top: -19.85rem;
     position: relative;
     z-index: 1; /* Mantém as imagens abaixo do login */
-    
 }
 
+.imagemAlta,
+.imagemBaixa {
+    width: 300px; /* Largura padrão das imagens */
+    margin-left: 29.30rem; /* Margem esquerda padrão */
+    border-radius: 10rem; /* Bordas arredondadas */
+}
 
-.imagemAlta, .imagemBaixa {
-    width: 300px;
-    margin-left: 29.30rem;
-    border-radius: 10rem;
+/* Estilos responsivos */
+@media (max-width: 1024px) {
+    .CaixaLogin {
+        width: 80%; /* Largura reduzida para telas médias */
+        height: auto; /* Altura automática para acomodar o conteúdo */
+        margin-top: 2rem;
+        border-radius: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .login {
+        width: 80%; /* Largura do login reduzida */
+        margin-top: 2rem; /* Margem superior reduzida */
+    }
+
+    .imagem {
+        margin-top: -20rem; /* Ajusta a margem para a imagem */
+    }
+
+    .imagemAlta,
+    .imagemBaixa {
+        width: 80%; /* Largura das imagens reduzida */
+        margin-left: 10%; /* Margem centralizada */
+    }
+}
+
+/* Estilos responsivos para tablets e telas pequenas */
+@media (max-width: 768px) {
+    .CaixaLogin {
+        width: 90%; /* Largura reduzida para telas menores */
+        height: auto; /* Altura automática */
+        margin-bottom: 10rem;
+    }
+
+    .login {
+        width: 80%; /* Largura do login reduzida */
+        margin-top: 1rem; /* Margem superior reduzida */
+    }
+
+    .imagem {
+        margin-top: -22rem;
+    }
+
+    .imagemAlta,
+    .imagemBaixa {
+        width: 80%; /* Largura das imagens reduzida */
+        margin-left: 10%; /* Margem centralizada */
+    }
+}
+
+/* Estilos responsivos para smartphones */
+@media (max-width: 480px) {
+    .CaixaLogin {
+        width: 95%; /* Largura muito reduzida para smartphones */
+        height: auto; /* Altura automática */
+        margin-bottom: 2rem;
+    }
+
+    .login {
+        width: 100%; /* Largura total para o login */
+        margin-top: 1rem; /* Margem superior reduzida */
+        gap: 2rem; /* Menor espaço entre os elementos */
+    }
+
+    .login h1 {
+        font-size: 1.5rem; /* Tamanho do texto reduzido */
+    }
+
+    .login h4,
+    .login h3 {
+        font-size: 1rem; /* Tamanho do texto reduzido */
+    }
+
+    .login input,
+    .login button {
+        height: 2.5rem; /* Aumenta a altura dos inputs e botões */
+    }
+
+    .imagem {
+        margin-top: -7rem; /* Ajusta a margem para a imagem */
+    }
+
+    .imagemAlta,
+    .imagemBaixa {
+        width: 80%; /* Largura total para imagens */
+        margin-left: 0; /* Remove margem esquerda */
+    }
 }

@@ -14,7 +14,7 @@ export const CaixaTextoFatecCampinas= () => {
         {isExpanded && (
             <div className={style.CaixaTextoFatecCampinas} style={{ marginTop: '0.80rem' }}>
             <p>O projeto visa aprimorar e centralizar o controle
-            e agestão das informações de estágio
+            e a gestão das informações de estágio
             realizadas pelos alunos, migrando os dados da
             planilha em Excel para um banco de dados
             relacional. Isso incluirá a criação de micro

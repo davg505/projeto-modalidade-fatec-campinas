@@ -3,13 +3,55 @@
     background-color: var(--azul);
     width: 50rem;
     height: 4.5rem;
+    display: flex;
     justify-content: center;
     align-items: center;
-    margin: 50; /* Remova a margem */
+    margin: 0; /* Remove a margem */
+    margin-top: -1rem;
     border-radius: 2rem;
 }
 
 .cabecalhotexto {
     margin-left: 2rem;
+}
 
+/* Estilo responsivo para telas médias */
+@media (max-width: 1024px) {
+    .CabecalhoLogin {
+        width: 100%; /* Largura reduzida para telas médias */
+        height: auto; /* Altura automática para acomodar o conteúdo */
+        margin-top: -0.5rem;
+        border-radius: 1rem;
+    }
+
+    .cabecalhotexto {
+        margin-left: 1.5rem;
+        font-size: 1rem; /* Ajusta o tamanho da fonte */
+    }
+}
+
+/* Estilo responsivo para tablets e telas pequenas */
+@media (max-width: 768px) {
+    .CabecalhoLogin {
+        width: 100%; /* Largura reduzida para telas menores */
+        height: auto; /* Altura automática */
+    }
+
+    .cabecalhotexto {
+        margin-left: 1rem;
+        font-size: 0.9rem; /* Reduz o tamanho da fonte */
+    }
+}
+
+/* Estilo responsivo para smartphones */
+@media (max-width: 480px) {
+    .CabecalhoLogin {
+        width: 90%; /* Largura reduzida para telas menores */
+        height: auto; /* Altura automática */
+    }
+
+    .cabecalhotexto {
+        margin-left: 0.5rem;
+        font-size: 0.8rem; /* Ajuste final no tamanho da fonte */
+    }
 }

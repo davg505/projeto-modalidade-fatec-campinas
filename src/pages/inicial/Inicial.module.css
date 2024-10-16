@@ -1,16 +1,14 @@
 .Inicial {
-
+    min-height: calc(100vh - 200rem); /* Ajuste para que o conteúdo preencha a altura da tela */
     display: flex;
-    flex-direction: column; /* Empilha os elementos verticalmente */
-    justify-content: center; /* Centraliza verticalmente */
-    align-items: center; /* Centraliza horizontalmente */
+    flex-direction: column;
+    justify-content: space-between; /* Distribui o espaço de forma mais eficiente */
+    align-items: center;
     width: 100%;
-    gap: 2rem; /* Espaçamento entre os blocos */
-    padding: 2rem; /* Adiciona espaçamento interno para evitar que o conteúdo chegue muito perto das bordas */
-    box-sizing: border-box; /* Inclui padding e borda no cálculo da largura e altura */
-    margin: 0 auto; /* Centraliza horizontalmente em relação à página */
+    gap: 5rem;
+    box-sizing: border-box;
 }
 .sideBySide {
     display: flex;
-    gap: 1rem; /* Ajusta o espaçamento entre as duas abas */
+    gap: 2rem; /* Ajusta o espaçamento entre as duas abas */
 }

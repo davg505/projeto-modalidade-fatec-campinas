@@ -1,14 +1,13 @@
 .Cabecalho {
     background: var(--cinza);
     color: var(--cinza);
-    padding: 1rem 0.5rem;
     display: flex;
-    width:100%;
+    width: 100%;
+    height: 7rem;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap; /* Itens vão quebrar de linha se necessário */
 }
-
 
 .LeftSection {
     display: flex;
@@ -27,14 +26,13 @@
 
 .Cabecalho h5 {
     margin-left: 5rem;
-    font-size: 1.0rem;
+    font-size: 1rem;
 }
 
-.Cabecalho img{
-    width: 175px; 
+.Cabecalho img {
+    width: 175px;
     height: auto;
     margin: 0 2rem; /* Ajusta margem para alinhamento */
-
 }
 
 .Buscador {
@@ -42,18 +40,80 @@
     margin-right: 0; /* Remove qualquer margem à direita */
 }
 
-/* Adiciona responsividade */
+/* Estilo responsivo para telas médias */
+@media (max-width: 1024px) {
+    .Cabecalho {
+        height: 6rem; /* Ajuste na altura */
+    }
+
+    .Cabecalho h1 {
+        font-size: 1.3rem; /* Diminuir o tamanho da fonte */
+        margin-left: 3rem;
+    }
+
+    .Cabecalho h5 {
+        font-size: 0.9rem;
+        margin-left: 3rem;
+    }
+
+    .Cabecalho img {
+        width: 150px; /* Ajuste no tamanho da imagem */
+    }
+}
+
+/* Estilo responsivo para tablets e telas pequenas */
 @media (max-width: 768px) {
     .Cabecalho {
-        justify-content: center; /* Centraliza conteúdo em telas pequenas */
+        height: auto; /* Ajuste a altura para caber conteúdo */
+        padding: 1rem;
+        flex-direction: column; /* Coloca o conteúdo em coluna */
     }
-    
+
+    .LeftSection {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .Cabecalho h1, .Cabecalho h5 {
+        margin-left: 0;
+        text-align: center;
+    }
+
     .Cabecalho img {
-        margin: 1rem 0; /* Adiciona espaço em telas menores */
+        margin: 0 auto;
     }
 
     .Buscador {
-        width: 100%; /* Faz o buscador ocupar a largura total */
-        margin-top: 1rem; /* Adiciona espaço em telas pequenas */
+        margin: 1rem auto;
+    }
+}
+
+/* Estilo responsivo para smartphones */
+@media (max-width: 480px) {
+    .Cabecalho {
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    .Cabecalho h1 {
+        font-size: 1.2rem;
+        margin-left: 0;
+    }
+
+    .Cabecalho h5 {
+        font-size: 0.8rem;
+        margin-left: 0;
+    }
+
+    .Cabecalho img {
+        width: 120px; /* Diminuir o tamanho da imagem */
+        margin-bottom: 1rem;
+    }
+
+    .Buscador {
+        margin-top: 1rem;
+        margin-left: 0;
     }
 }
