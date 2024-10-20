@@ -9,6 +9,8 @@
     color: var(--branco);
     margin-left: 2.5rem; /* Margem esquerda padrão */
     border-radius: 2rem;
+    position: relative;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .CaixaTextoFatecCampinas:hover {
@@ -33,14 +35,23 @@
 /* Estilos responsivos */
 @media (max-width: 1024px) {
     .CaixaTextoFatecCampinas {
-        width: 80%; /* Largura reduzida para telas médias */
+        width: 60%; /* Largura reduzida para telas médias */
         height: auto; /* Altura automática para acomodar o conteúdo */
-        margin-left: 1rem; /* Margem esquerda reduzida */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 2rem;
         margin-right: 1rem; /* Margem direita reduzida */
     }
 
     .CaixaTextoFatecCampinas img {
-        width: 70%; /* Largura da imagem reduzida */
+        width: 40%; /* Largura da imagem reduzida */
+        height: auto; /* Altura automática */
+    }
+
+    .CaixaTextoFatecCampinas p {
+        margin-left: 2rem; /* Alinha o parágrafo à esquerda */
+        font-size: 0.8rem;
     }
 }
 
@@ -48,13 +59,21 @@
     .CaixaTextoFatecCampinas {
         width: 90%; /* Largura reduzida para telas menores */
         height: auto; /* Altura automática */
-        margin-left: 0; /* Remove margem esquerda */
+        margin-left: 1rem; /* Remove margem esquerda */
         margin-right: 0; /* Remove margem direita */
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .CaixaTextoFatecCampinas img {
-        width: 100%; /* Largura total para imagens */
+        width: 50%; /* Largura total para imagens */
         height: auto; /* Altura automática */
+        margin-right: 8rem;
+    }
+    .CaixaTextoProjeto p {
+        margin-right: 10rem; /* Alinha o parágrafo à esquerda */
+        font-size: 1rem;
     }
 }
 
@@ -71,7 +90,7 @@
     }
 
     .CaixaTextoFatecCampinas img {
-        width: 80%; /* Largura da imagem reduzida */
+        width: 40%; /* Largura da imagem reduzida */
         height: auto; /* Altura automática */
         margin: 1rem auto; /* Margem vertical e centraliza a imagem */
     }

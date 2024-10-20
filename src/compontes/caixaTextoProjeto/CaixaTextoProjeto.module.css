@@ -34,29 +34,48 @@
 /* Estilos responsivos */
 @media (max-width: 1024px) {
     .CaixaTextoProjeto {
-        width: 80%; /* Largura reduzida para telas médias */
+        width: 60%; /* Largura reduzida para telas médias */
         height: auto; /* Altura automática para acomodar o conteúdo */
-        margin-left: 1rem; /* Margem esquerda reduzida */
-        margin-right: 1rem; /* Margem direita reduzida */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 2rem;
     }
 
     .CaixaTextoProjeto img {
-        width: 70%; /* Largura da imagem reduzida */
+        width: 40%; /* Largura da imagem reduzida */
         height: auto; /* Altura automática */
+    }
+
+    .CaixaTextoProjeto p {
+        margin-right: auto; /* Alinha o parágrafo à esquerda */
+        font-size: 1rem;
+        padding: 0 4rem;
+        
     }
 }
 
 @media (max-width: 768px) {
     .CaixaTextoProjeto {
-        width: 90%; /* Largura reduzida para telas menores */
+        width: 60%; /* Largura reduzida para telas menores */
         height: auto; /* Altura automática */
-        margin-left: 0; /* Remove margem esquerda */
+        margin-left: 1rem; /* Remove margem esquerda */
         margin-right: 0; /* Remove margem direita */
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .CaixaTextoProjeto img {
-        width: 100%; /* Largura total para imagens */
+        width: 40%; /* Largura total para imagens */
         height: auto; /* Altura automática */
+    }
+
+    .CaixaTextoProjeto p {
+        margin-right: auto; /* Alinha o parágrafo à esquerda */
+        font-size: 1rem;
+        padding: 0 2rem;
+        
     }
 }
 
@@ -64,7 +83,10 @@
     .CaixaTextoProjeto {
         flex-direction: column; /* Alinha itens verticalmente */
         height: auto; /* Altura automática */
-        padding: 1rem; /* Adiciona padding para melhor visualização */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
     }
 
     .CaixaTextoProjeto p {
@@ -73,7 +95,7 @@
     }
 
     .CaixaTextoProjeto img {
-        width: 80%; /* Largura da imagem reduzida */
+        width: 40%; /* Largura da imagem reduzida */
         height: auto; /* Altura automática */
         margin: 1rem auto; /* Margem vertical e centraliza a imagem */
     }
