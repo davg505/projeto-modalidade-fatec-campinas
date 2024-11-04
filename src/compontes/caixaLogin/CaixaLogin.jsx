@@ -23,14 +23,17 @@ export const CaixaLogin = (props) => {
         // Lógica para autenticar o usuário
         console.log('Username:', username);
         console.log('Password:', password);
+    
         if (username === 'aluno@fatec.br' && password === 'aluno') {
             // Redireciona para uma URL externa
             window.location.href = 'https://davg505.github.io/projeto-modalidade-fatec-campinas-aluno/';
+        } else if (username === 'professor@fatec.br' && password === 'professor') {
+            // Redireciona para uma URL externa
+            window.location.href = 'https://davg505.github.io/projeto-modalidade-fatec-campinas-professor/';
         } else {
             alert('Usuário ou senha inválidos');
         }
     };
-
     // eslint-disable-next-line react/prop-types
     const { text } = props;
     return (
