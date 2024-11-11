@@ -30,7 +30,10 @@ export const CaixaLogin = (props) => {
         } else if (username === 'professor@fatec.br' && password === 'professor') {
             // Redireciona para uma URL externa
             window.location.href = 'https://davg505.github.io/projeto-modalidade-fatec-campinas-professor/';
-        } else {
+        } else if (username === 'empresa@fatec.br' && password === 'empresa'){
+            // Redireciona para uma URL externa
+            window.location.href = 'https://davg505.github.io/projeto-modalidade-fatec-campinas-empresa/';
+        }else {
             alert('Usuário ou senha inválidos');
         }
     };
