@@ -1,4 +1,4 @@
-import { Buscador } from "../buscador";
+
 import style from "./Cabecalho.module.css";
 import logo from './image/logoSite2.png';
 
@@ -10,7 +10,6 @@ const Cabecalho = () => {
                 <h5><span>Estagio / IC / EP</span></h5>
             </div>
             <img src={logo} alt="Minha Imagem" />
-            <Buscador className={style.Buscador}/>
         </div>
     );
 };

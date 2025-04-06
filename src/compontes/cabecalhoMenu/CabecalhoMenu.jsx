@@ -6,7 +6,6 @@ export const CabecalhoMenu = () => {
         { id: 1, nome: 'Home', link: '/' },
         { id: 2, nome: 'Aluno', link: '/aluno' },
         { id: 3, nome: 'Docente', link: '/docente' },
-        { id: 4, nome: 'Empresa', link: '/empresa' },
     ]
     return(
         <ul className={style.CabecalhoMenu}>
