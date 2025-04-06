@@ -41,10 +41,17 @@ export const CaixaLogin = (props) => {
 
       if (response.ok && data.success) {
         // Se a resposta for bem-sucedida, redireciona conforme o tipo de usuário
+
+        if (data.token) {
+          localStorage.setItem('authToken', data.token);
+        }
         console.log("Login bem-sucedido, redirecionando...");
+       
 
         if (data.tipo === 'aluno') {
+          localStorage.setItem('authToken', data.token); 
           window.location.replace('https://davg505.github.io/projeto-modalidade-fatec-campinas-aluno/');
+         // window.location.replace('http://localhost:5173/projeto-modalidade-fatec-campinas-aluno/');
         } else if (data.tipo === 'professor') {
           window.location.replace('https://davg505.github.io/projeto-modalidade-fatec-campinas-professor/');
         }
@@ -66,7 +73,7 @@ export const CaixaLogin = (props) => {
       <div className={style.login}>
         <h1>Entrar</h1>
         <h4>Insira seu Email (sem pontos e traços) e senha.</h4>
-
+       
         <form onSubmit={handleSubmit}>
           <h3>E-mail</h3>
           <input
