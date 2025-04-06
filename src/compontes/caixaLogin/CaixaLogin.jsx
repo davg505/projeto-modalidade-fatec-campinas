@@ -19,14 +19,14 @@ export const CaixaLogin = (props) => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    
-    // Lógica para autenticar o usuário
+
     console.log('Email:', username);
     console.log('Password:', password);
 
     try {
       // Envia uma requisição POST para o back-end para autenticar
-      const response = await fetch('https://backend-fatec.onrender.com/api/login/aluno', {
+      //const response = await fetch('http://localhost:3001/api/login', {
+      const response = await fetch('https://backend-fatec.onrender.com/api/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -36,13 +36,18 @@ export const CaixaLogin = (props) => {
           senha: password,   // A senha do formulário
         }),
       });
+
       const data = await response.json();
 
       if (response.ok && data.success) {
         // Se a resposta for bem-sucedida, redireciona conforme o tipo de usuário
-            console.log("Login bem-sucedido, redirecionando..."); 
-            window.location.replace('https://davg505.github.io/projeto-modalidade-fatec-campinas-aluno/');
+        console.log("Login bem-sucedido, redirecionando...");
 
+        if (data.tipo === 'aluno') {
+          window.location.replace('https://davg505.github.io/projeto-modalidade-fatec-campinas-aluno/');
+        } else if (data.tipo === 'professor') {
+          window.location.replace('https://davg505.github.io/projeto-modalidade-fatec-campinas-professor/');
+        }
       } else {
         alert(data.message || 'Usuário ou senha inválidos');
       }
@@ -61,7 +66,7 @@ export const CaixaLogin = (props) => {
       <div className={style.login}>
         <h1>Entrar</h1>
         <h4>Insira seu Email (sem pontos e traços) e senha.</h4>
-        
+
         <form onSubmit={handleSubmit}>
           <h3>E-mail</h3>
           <input
