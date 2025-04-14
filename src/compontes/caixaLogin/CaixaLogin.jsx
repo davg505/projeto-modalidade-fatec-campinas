@@ -50,8 +50,8 @@ export const CaixaLogin = (props) => {
 
         if (data.tipo === 'aluno') {
           localStorage.setItem('authToken', data.token); 
-          window.location.replace('https://davg505.github.io/projeto-modalidade-fatec-campinas-aluno/');
-         // window.location.replace('http://localhost:5173/projeto-modalidade-fatec-campinas-aluno/');
+          window.location.replace(`https://davg505.github.io/projeto-modalidade-fatec-campinas-aluno/?token=${encodeURIComponent(data.token)}`);
+         // window.location.replace(`http://localhost:5174/projeto-modalidade-fatec-campinas-aluno/?token=${encodeURIComponent(data.token)}`);
         } else if (data.tipo === 'professor') {
           window.location.replace('https://davg505.github.io/projeto-modalidade-fatec-campinas-professor/');
         }
