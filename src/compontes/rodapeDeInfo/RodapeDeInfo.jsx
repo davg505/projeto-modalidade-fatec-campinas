@@ -23,7 +23,7 @@ export const RodapeDeInfo = () => {
             </div>
    {/* Seção da pergunta e resposta da "IA" */}
         <div className={style.contactSection}>
-                <span>Faça uma pergunta à nossa IA:</span>
+                <span>Faça uma pergunta:</span>
                 <textarea
                     placeholder="Digite sua pergunta"
                     value={pergunta}
@@ -32,7 +32,7 @@ export const RodapeDeInfo = () => {
                 <button onClick={handleEnviarPergunta}>Enviar</button>
                 {resposta && (
                     <div className={style.resposta}>
-                        <p>Resposta da IA: {resposta}</p>
+                        <p>Resposta: {resposta}</p>
                     </div>
                 )}
             </div>

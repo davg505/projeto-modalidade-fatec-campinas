@@ -5,7 +5,7 @@ export const CabecalhoMenu = () => {
     const tarefas = [
         { id: 1, nome: 'Home', link: '/' },
         { id: 2, nome: 'Aluno', link: '/aluno' },
-        { id: 3, nome: 'Docente', link: '/docente' },
+       // { id: 3, nome: 'Docente', link: '/docente' },
     ]
     return(
         <ul className={style.CabecalhoMenu}>
